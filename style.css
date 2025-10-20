@@ -1,0 +1,89 @@
+/* Global Styles & Animations */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+    animation: infinite-scroll 150s linear infinite;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header Scroll Effect */
+.scrolled {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Prose styles for service detail pages */
+.prose .lead {
+  color: #374151; /* text-gray-700 */
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 2rem;
+}
+.prose h3 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1rem; /* mb-4 */
+  margin-top: 3rem; /* mt-12 */
+}
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.25rem; /* pl-5 */
+}
+.prose ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* --- UTILITY CLASSES FOR INLINE STYLE REMOVAL --- */
+
+/* Transition Delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+
+/* Carousel Mask */
+.carousel-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+/* Hero Background Images */
+.hero-home { background-image: url('./images/hero/hero-images.jpg'); }
+.hero-about { background-image: url('./images/hero/noktabilisim.png'); }
+.hero-services { background-image: url('./images/hero/hizmet1.jpg'); }
+.hero-contact { background-image: url('./images/hero/iletisim-hero.jpg'); }
+.hero-service-sunucu { background-image: url('./images/hero/sunucuhizm.jpg'); }
+.hero-service-sanallastirma { background-image: url('./images/hero/sanallastirma-hero.jpg'); }
+.hero-service-guvenlik { background-image: url('./images/hero/guvenlik.jpg'); }
+.hero-service-network { background-image: url('./images/hero/network.jpg'); }
+.hero-service-yazilim { background-image: url('./images/hero/web.jpg'); }
+.hero-service-bakim { background-image: url('./images/hero/bakim-onarim.jpg'); }
+.hero-service-dijitallesme { background-image: url('./images/hero/dijitallesme.jpg'); }

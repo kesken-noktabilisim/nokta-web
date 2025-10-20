@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nokta Bilişim | Yenilikçi Teknoloji Çözümleri</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 transition-all duration-300 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[100px]">
+        <div class="flex-shrink-0 flex flex-row justify-center items-center">
+          <a href="/">
+            <img class="h-[120px] w-auto" src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo">
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="/" class="text-sky-500 font-semibold transition-colors duration-300 text-lg">Ana Sayfa</a>
+          <a href="/hakkimizda.html"
+            class="text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">Hakkımızda</a>
+          <div class="relative group">
+            <a href="/hizmetlerimiz.html"
+              class="flex items-center text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">
+              Hizmetlerimiz
+              <i data-lucide="chevron-down"
+                class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180"></i>
+            </a>
+            <div
+              class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+              <div class="py-2">
+                <a href="/sunucu-hizmetleri.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Sunucu Hizmetleri</a>
+                <a href="/sanallastirma.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Sanallaştırma</a>
+                <a href="/guvenlik-hizmetleri.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Güvenlik Hizmetleri</a>
+                <a href="/network-hizmetleri.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Network Hizmetleri</a>
+                <a href="/yazilim-ve-web-hizmetleri.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Yazılım ve Web Hizmetleri</a>
+                <a href="/bakim-ve-onarim.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Bakım ve Onarım</a>
+                <a href="/dijitallesme-hizmetleri.html" class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Dijitalleşme Hizmetleri</a>
+              </div>
+            </div>
+          </div>
+          <a href="/iletisim.html"
+            class="text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">İletişim</a>
+        </nav>
+        <div class="hidden md:block">
+          <a href="/iletisim.html"
+            class="inline-block bg-sky-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 shadow-sm">
+            Teklif Alın
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-600 hover:text-sky-500 focus:outline-none" aria-label="Menüyü aç">
+            <i data-lucide="menu" class="h-7 w-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden absolute top-[98px] left-0 w-full bg-white shadow-lg">
+      <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col items-center">
+        <a href="/"
+          class="block w-full text-center px-3 py-3 rounded-md text-base font-medium text-sky-500 bg-gray-100">Ana
+          Sayfa</a>
+        <a href="/hakkimizda.html"
+          class="block w-full text-center px-3 py-3 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Hakkımızda</a>
+        <div class="w-full text-center">
+          <button id="mobile-services-button"
+            class="w-full flex justify-center items-center px-3 py-3 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500 rounded-md">
+            Hizmetlerimiz
+            <i data-lucide="chevron-down" class="ml-2 h-5 w-5 transition-transform duration-300"></i>
+          </button>
+          <div id="mobile-services-dropdown" class="hidden pl-4 mt-1 space-y-1">
+            <a href="/sunucu-hizmetleri.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Sunucu
+              Hizmetleri</a>
+            <a href="/sanallastirma.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Sanallaştırma</a>
+            <a href="/guvenlik-hizmetleri.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Güvenlik
+              Hizmetleri</a>
+            <a href="/network-hizmetleri.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Network
+              Hizmetleri</a>
+            <a href="/yazilim-ve-web-hizmetleri.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Yazılım
+              ve Web Hizmetleri</a>
+            <a href="/bakim-ve-onarim.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Bakım
+              ve Onarım</a>
+            <a href="/dijitallesme-hizmetleri.html"
+              class="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Dijitalleşme Hizmetleri</a>
+          </div>
+        </div>
+        <a href="/iletisim.html"
+          class="block w-full text-center px-3 py-3 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">İletişim</a>
+        <a href="/iletisim.html"
+          class="block w-4/5 text-center mt-4 bg-sky-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-sky-600 transition-colors duration-300">
+          Teklif Alın
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-800 text-white py-32 md:py-48">
+      <div class="absolute inset-0 bg-cover bg-center opacity-30 hero-home"></div>
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+          İşletmeniz İçin <span class="text-sky-400">Yenilikçi</span> Teknoloji Çözümleri
+        </h1>
+        <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
+          Nokta Bilişim olarak, işletmenizin dijital dönüşümünü hızlandıracak, güvenilir ve ölçeklenebilir BT altyapı
+          hizmetleri sunuyoruz.
+        </p>
+        <div class="mt-10">
+          <a href="/hizmetlerimiz.html"
+            class="inline-block bg-sky-500 text-white font-semibold text-lg py-3 px-8 rounded-md hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Hizmetlerimizi Keşfedin
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-24 bg-gray-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="fade-in-section text-3xl md:text-4xl font-bold text-gray-900">Çözümlerimiz</h2>
+          <p class="fade-in-section mt-4 text-lg text-gray-600 max-w-2xl mx-auto delay-100">
+            İşletmenizin ihtiyaçlarına yönelik sunduğumuz profesyonel hizmetlerle rekabette bir adım öne çıkın.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Service Card 1 -->
+          <div
+            class="fade-in-section bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group"
+            >
+            <div class="p-6 flex flex-col h-full">
+              <div class="mb-4"><i data-lucide="server" class="h-12 w-12 text-sky-500"></i></div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Sunucu Hizmetleri</h3>
+              <p class="text-gray-600 flex-grow">İşletmenizin verilerini güvenle barındıran, yüksek performanslı ve
+                kesintisiz sunucu çözümleri sunuyoruz.</p>
+              <div class="mt-6">
+                <a href="/sunucu-hizmetleri.html"
+                  class="font-semibold text-sky-500 inline-flex items-center group-hover:text-sky-600">
+                  Daha Fazla Bilgi <i data-lucide="arrow-right"
+                    class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="fade-in-section bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group delay-100"
+            >
+            <div class="p-6 flex flex-col h-full">
+              <div class="mb-4"><i data-lucide="layers-3" class="h-12 w-12 text-sky-500"></i></div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Sanallaştırma</h3>
+              <p class="text-gray-600 flex-grow">Donanım maliyetlerinizi düşürerek kaynak verimliliğini artıran esnek
+                sanallaştırma çözümleri sağlıyoruz.</p>
+              <div class="mt-6">
+                <a href="/sanallastirma.html"
+                  class="font-semibold text-sky-500 inline-flex items-center group-hover:text-sky-600">
+                  Daha Fazla Bilgi <i data-lucide="arrow-right"
+                    class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="fade-in-section bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group delay-200"
+            >
+            <div class="p-6 flex flex-col h-full">
+              <div class="mb-4"><i data-lucide="shield-check" class="h-12 w-12 text-sky-500"></i></div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Güvenlik Hizmetleri</h3>
+              <p class="text-gray-600 flex-grow">Siber tehditlere karşı uçtan uca koruma sağlayan çözümlerle dijital
+                varlıklarınızı güvence altına alıyoruz.</p>
+              <div class="mt-6">
+                <a href="/guvenlik-hizmetleri.html"
+                  class="font-semibold text-sky-500 inline-flex items-center group-hover:text-sky-600">
+                  Daha Fazla Bilgi <i data-lucide="arrow-right"
+                    class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="fade-in-section bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group delay-300"
+            >
+            <div class="p-6 flex flex-col h-full">
+              <div class="mb-4"><i data-lucide="network" class="h-12 w-12 text-sky-500"></i></div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Network Hizmetleri</h3>
+              <p class="text-gray-600 flex-grow">Hızlı, güvenilir ve kesintisiz iletişim için modern kablolu ve kablosuz
+                ağ altyapıları tasarlıyor ve kuruyoruz.</p>
+              <div class="mt-6">
+                <a href="/network-hizmetleri.html"
+                  class="font-semibold text-sky-500 inline-flex items-center group-hover:text-sky-600">
+                  Daha Fazla Bilgi <i data-lucide="arrow-right"
+                    class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="fade-in-section bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group delay-400"
+            >
+            <div class="p-6 flex flex-col h-full">
+              <div class="mb-4"><i data-lucide="code-2" class="h-12 w-12 text-sky-500"></i></div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Yazılım ve Web Hizmetleri</h3>
+              <p class="text-gray-600 flex-grow">Marka kimliğinizi yansıtan modern web siteleri ve iş süreçlerinizi
+                otomatize eden özel yazılımlar geliştiriyoruz.</p>
+              <div class="mt-6">
+                <a href="/yazilim-ve-web-hizmetleri.html"
+                  class="font-semibold text-sky-500 inline-flex items-center group-hover:text-sky-600">
+                  Daha Fazla Bilgi <i data-lucide="arrow-right"
+                    class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="fade-in-section bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group delay-500"
+            >
+            <div class="p-6 flex flex-col h-full">
+              <div class="mb-4"><i data-lucide="wrench" class="h-12 w-12 text-sky-500"></i></div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Bakım ve Onarım</h3>
+              <p class="text-gray-600 flex-grow">BT altyapınızın düzenli bakımı ve hızlı arıza müdahalesiyle işlerinizin
+                aksamasını önlüyoruz.</p>
+              <div class="mt-6">
+                <a href="/bakim-ve-onarim.html"
+                  class="font-semibold text-sky-500 inline-flex items-center group-hover:text-sky-600">
+                  Daha Fazla Bilgi <i data-lucide="arrow-right"
+                    class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="text-center mt-12">
+          <a href="/hizmetlerimiz.html"
+            class="font-semibold text-sky-600 inline-flex items-center hover:text-sky-700 group">
+            Tüm Hizmetleri Gör
+            <i data-lucide="arrow-right"
+              class="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-24 bg-white overflow-hidden">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+            <h2 class="fade-in-section text-3xl font-bold text-gray-900 mb-4">Neden Nokta Bilişim?</h2>
+            <p class="fade-in-section text-gray-600 leading-relaxed mb-6 delay-100">
+              Müşteri odaklı yaklaşımımız, alanında uzman ekibimiz ve en son teknolojiyi kullanma tutkumuzla,
+              işletmenizin teknoloji ortağı olmaya hazırız. Güvenilirlik, yenilikçilik ve sürdürülebilirlik
+              ilkelerimizle size özel çözümler üretiyoruz.
+            </p>
+            <ul class="fade-in-section space-y-4 text-gray-700 delay-200">
+              <li class="flex items-start">
+                <span class="inline-block bg-sky-100 text-sky-600 rounded-full p-2 mr-4">
+                  <i data-lucide="users" class="w-6 h-6"></i>
+                </span>
+                <span><strong>Uzman Kadro:</strong> Sertifikalı ve deneyimli mühendislerimizle proaktif destek.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="inline-block bg-sky-100 text-sky-600 rounded-full p-2 mr-4">
+                  <i data-lucide="zap" class="w-6 h-6"></i>
+                </span>
+                <span><strong>Yenilikçi Çözümler:</strong> Sektördeki en güncel teknolojileri işinize entegre
+                  ediyoruz.</span>
+              </li>
+              <li class="flex items-start">
+                <span class="inline-block bg-sky-100 text-sky-600 rounded-full p-2 mr-4">
+                  <i data-lucide="check-circle" class="w-6 h-6"></i>
+                </span>
+                <span><strong>7/24 Destek & Güvenilirlik:</strong> İşinizin sürekliliği için kesintisiz teknik destek
+                  sağlıyoruz.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fade-in-section order-1 md:order-2 delay-100">
+            <img src="./images/hero/homepage1.jpg" alt="Çalışan Ekip" class="rounded-lg shadow-xl">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-24 bg-gray-50 group">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="fade-in-section text-3xl md:text-4xl font-bold text-gray-900">Çözüm Ortaklarımız</h2>
+          <p class="fade-in-section mt-4 text-lg text-gray-600 max-w-2xl mx-auto delay-100">
+            Alanında lider markalarla yaptığımız iş birlikleriyle gücünüze güç katıyoruz.
+          </p>
+        </div>
+        <div class="fade-in-section w-full overflow-hidden delay-200 carousel-mask">
+          <div class="flex animate-infinite-scroll hover:[animation-play-state:paused]">
+            <!-- Brands will be dynamically loaded here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-sky-600">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+        <h2 class="fade-in-section text-3xl font-bold text-white">Projeniz İçin Hazır mısınız?</h2>
+        <p class="fade-in-section mt-4 text-lg text-sky-100 max-w-2xl mx-auto delay-100">
+          İhtiyaçlarınızı analiz edelim ve size en uygun teknoloji çözümlerini sunalım. Hemen bizimle iletişime geçin ve
+          dijital geleceğinizi birlikte inşa edelim.
+        </p>
+        <div class="fade-in-section mt-8 delay-200">
+          <a href="/iletisim.html"
+            class="inline-block bg-white text-sky-600 font-semibold text-lg py-3 px-8 rounded-md hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
+            Teklif Alın
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- About Section -->
+        <div class="space-y-4">
+          <img src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo" class="h-12 bg-white p-1 rounded-md">
+          <p class="text-gray-300">
+            Nokta Bilişim, işletmenizin teknoloji ihtiyaçlarına yenilikçi ve güvenilir çözümler sunarak dijital dönüşüm
+            yolculuğunuzda yanınızdadır.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-sky-400" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
+          <ul class="space-y-2">
+            <li><a href="/hizmetlerimiz.html#sunucu-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Sunucu Hizmetleri</a></li>
+            <li><a href="/hizmetlerimiz.html#sanallastirma"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Sanallaştırma</a></li>
+            <li><a href="/hizmetlerimiz.html#guvenlik-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Güvenlik Hizmetleri</a></li>
+            <li><a href="/hizmetlerimiz.html#network-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Network Hizmetleri</a></li>
+            <li><a href="/hizmetlerimiz.html#yazilim-ve-web-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Yazılım ve Web Hizmetleri</a></li>
+            <li><a href="/hizmetlerimiz.html#bakim-ve-onarim"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Bakım ve Onarım</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Hızlı Erişim</h3>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-gray-300 hover:text-sky-400 transition-colors">Ana Sayfa</a></li>
+            <li><a href="/hakkimizda.html" class="text-gray-300 hover:text-sky-400 transition-colors">Hakkımızda</a>
+            </li>
+            <li><a href="/hizmetlerimiz.html"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Hizmetlerimiz</a></li>
+            <li><a href="/iletisim.html" class="text-gray-300 hover:text-sky-400 transition-colors">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">İletişim</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex items-start">
+              <i data-lucide="map-pin" class="flex-shrink-0 mr-3 mt-1 text-sky-400 w-5 h-5"></i>
+              <span>Dörtler Sokagi No:46, Girne, 34852 Maltepe/İstanbul</span>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="phone" class="flex-shrink-0 mr-3 text-sky-400 w-5 h-5"></i>
+              <a href="tel:+902161234567" class="hover:text-sky-400">+90 216 123 45 67</a>
+            </li>
+            <li class="flex items-center">
+              <i data-lucide="mail" class="flex-shrink-0 mr-3 text-sky-400 w-5 h-5"></i>
+              <a href="mailto:info@noktabilisim.net" class="hover:text-sky-400">info@noktabilisim.net</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-900 py-4">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+        &copy; <span id="current-year"></span> Nokta Bilişim Teknolojileri. Tüm Hakları Saklıdır.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
