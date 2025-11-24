@@ -18,13 +18,13 @@
   <!-- Header -->
   <header class="sticky top-0 z-50 transition-all duration-300 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-[100px]">
+      <div class="flex items-center justify-between h-[120px]">
         <div class="flex-shrink-0 flex flex-row justify-center items-center">
           <a href="index.html">
-            <img class="h-[120px] w-auto" src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo">
+            <img class="h-[110px] w-auto" src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo">
           </a>
         </div>
-        <nav class="hidden md:flex items-center space-x-6">
+        <nav class="hidden lg:flex items-center space-x-6">
           <a href="index.html" class="text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">Ana
             Sayfa</a>
           <a href="hakkimizda.html"
@@ -63,13 +63,13 @@
           <a href="iletisim.html"
             class="text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">İletişim</a>
         </nav>
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
           <a href="iletisim.html"
             class="inline-block bg-sky-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 shadow-sm">
             Teklif Alın
           </a>
         </div>
-        <div class="md:hidden">
+        <div class="lg:hidden">
           <button id="mobile-menu-button" class="text-gray-600 hover:text-sky-500 focus:outline-none"
             aria-label="Menüyü aç">
             <i data-lucide="menu" class="h-7 w-7"></i>
@@ -78,7 +78,7 @@
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden absolute top-[98px] left-0 w-full bg-white shadow-lg">
+    <div id="mobile-menu" class="lg:hidden hidden absolute top-[120px] left-0 w-full bg-white shadow-lg">
       <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col items-center">
         <a href="index.html"
           class="block w-full text-center px-3 py-3 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Ana
@@ -187,7 +187,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- About Section -->
         <div class="space-y-4">
-          <img src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo" class="h-12 bg-white p-1 rounded-md">
+          <img src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo" class="h-24 bg-white p-1 rounded-md">
           <p class="text-gray-300">
             Nokta Bilişim, işletmenizin teknoloji ihtiyaçlarına yenilikçi ve güvenilir çözümler sunarak dijital dönüşüm
             yolculuğunuzda yanınızdadır.
@@ -202,20 +202,18 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Hizmetlerimiz</h3>
           <ul class="space-y-2">
-            <li><a href="sunucu-hizmetleri.html" class="text-gray-300 hover:text-sky-400 transition-colors">Sunucu
-                Hizmetleri</a></li>
-            <li><a href="sanallastirma.html"
+            <li><a href="hizmetlerimiz.html#sunucu-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Sunucu Hizmetleri</a></li>
+            <li><a href="hizmetlerimiz.html#sanallastirma"
                 class="text-gray-300 hover:text-sky-400 transition-colors">Sanallaştırma</a></li>
-            <li><a href="guvenlik-hizmetleri.html" class="text-gray-300 hover:text-sky-400 transition-colors">Güvenlik
-                Hizmetleri</a></li>
-            <li><a href="network-hizmetleri.html" class="text-gray-300 hover:text-sky-400 transition-colors">Network
-                Hizmetleri</a></li>
-            <li><a href="yazilim-ve-web-hizmetleri.html"
+            <li><a href="hizmetlerimiz.html#guvenlik-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Güvenlik Hizmetleri</a></li>
+            <li><a href="hizmetlerimiz.html#network-hizmetleri"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Network Hizmetleri</a></li>
+            <li><a href="hizmetlerimiz.html#yazilim-ve-web-hizmetleri"
                 class="text-gray-300 hover:text-sky-400 transition-colors">Yazılım ve Web Hizmetleri</a></li>
-            <li><a href="bakim-ve-onarim.html" class="text-gray-300 hover:text-sky-400 transition-colors">Bakım ve
-                Onarım</a></li>
-            <li><a href="dijitallesme-hizmetleri.html"
-                class="text-gray-300 hover:text-sky-400 transition-colors">Dijitalleşme Hizmetleri</a></li>
+            <li><a href="hizmetlerimiz.html#bakim-ve-onarim"
+                class="text-gray-300 hover:text-sky-400 transition-colors">Bakım ve Onarım</a></li>
           </ul>
         </div>
 
@@ -224,7 +222,8 @@
           <h3 class="text-lg font-semibold mb-4">Hızlı Erişim</h3>
           <ul class="space-y-2">
             <li><a href="index.html" class="text-gray-300 hover:text-sky-400 transition-colors">Ana Sayfa</a></li>
-            <li><a href="hakkimizda.html" class="text-gray-300 hover:text-sky-400 transition-colors">Hakkımızda</a></li>
+            <li><a href="hakkimizda.html" class="text-gray-300 hover:text-sky-400 transition-colors">Hakkımızda</a>
+            </li>
             <li><a href="hizmetlerimiz.html"
                 class="text-gray-300 hover:text-sky-400 transition-colors">Hizmetlerimiz</a></li>
             <li><a href="iletisim.html" class="text-gray-300 hover:text-sky-400 transition-colors">İletişim</a></li>
@@ -237,11 +236,11 @@
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-start">
               <i data-lucide="map-pin" class="flex-shrink-0 mr-3 mt-1 text-sky-400 w-5 h-5"></i>
-              <span>Dörtler Sokagi No:46, Girne, 34852 Maltepe/İstanbul</span>
+              <span>Girne, Girne Cd. No:133, 34852 Maltepe/İstanbul</span>
             </li>
             <li class="flex items-center">
               <i data-lucide="phone" class="flex-shrink-0 mr-3 text-sky-400 w-5 h-5"></i>
-              <a href="tel:+902161234567" class="hover:text-sky-400">+90 216 123 45 67</a>
+              <a href="tel:+905324130073" class="hover:text-sky-400">+90 532 413 00 73</a>
             </li>
             <li class="flex items-center">
               <i data-lucide="mail" class="flex-shrink-0 mr-3 text-sky-400 w-5 h-5"></i>
@@ -253,7 +252,8 @@
     </div>
     <div class="bg-gray-900 py-4">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
-        &copy; <span id="current-year"></span> Nokta Bilişim Teknolojileri. Tüm Hakları Saklıdır.
+        &copy; <span id="current-year"></span> Nokta Bilişim Danışmanlık ve Elektronik San. Tic. Ltd. Şti. Tüm Hakları
+        Saklıdır.
       </div>
     </div>
   </footer>

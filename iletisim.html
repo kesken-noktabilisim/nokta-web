@@ -18,13 +18,13 @@
   <!-- Header -->
   <header class="sticky top-0 z-50 transition-all duration-300 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-[100px]">
+      <div class="flex items-center justify-between h-[120px]">
         <div class="flex-shrink-0 flex flex-row justify-center items-center">
           <a href="index.html">
-            <img class="h-[120px] w-auto" src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo">
+            <img class="h-[110px] w-auto" src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo">
           </a>
         </div>
-        <nav class="hidden md:flex items-center space-x-6">
+        <nav class="hidden lg:flex items-center space-x-6">
           <a href="index.html" class="text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">Ana
             Sayfa</a>
           <a href="hakkimizda.html"
@@ -62,13 +62,13 @@
           </div>
           <a href="iletisim.html" class="text-sky-500 font-semibold transition-colors duration-300 text-lg">İletişim</a>
         </nav>
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
           <a href="iletisim.html"
             class="inline-block bg-sky-500 text-white font-semibold py-2 px-5 rounded-md hover:bg-sky-600 transition-all duration-300 transform hover:scale-105 shadow-sm">
             Teklif Alın
           </a>
         </div>
-        <div class="md:hidden">
+        <div class="lg:hidden">
           <button id="mobile-menu-button" class="text-gray-600 hover:text-sky-500 focus:outline-none"
             aria-label="Menüyü aç">
             <i data-lucide="menu" class="h-7 w-7"></i>
@@ -77,7 +77,7 @@
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden absolute top-[98px] left-0 w-full bg-white shadow-lg">
+    <div id="mobile-menu" class="lg:hidden hidden absolute top-[120px] left-0 w-full bg-white shadow-lg">
       <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col items-center">
         <a href="index.html"
           class="block w-full text-center px-3 py-3 rounded-md text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-sky-500">Ana
@@ -154,15 +154,15 @@
                 <i data-lucide="map-pin" class="h-6 w-6 text-sky-500 mr-4 mt-1 flex-shrink-0"></i>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-800">Adres</h3>
-                  <p class="text-gray-600">Dörtler Sokagi No:46, Girne, 34852 Maltepe/İstanbul</p>
+                  <p class="text-gray-600">Girne, Girne Cd. No:133, 34852 Maltepe/İstanbul</p>
                 </div>
               </li>
               <li class="flex items-start">
                 <i data-lucide="phone" class="h-6 w-6 text-sky-500 mr-4 mt-1 flex-shrink-0"></i>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-800">Telefon</h3>
-                  <a href="tel:+902161234567" class="text-gray-600 hover:text-sky-600 transition-colors">+90 216 123 45
-                    67</a>
+                  <a href="tel:+905324130073" class="text-gray-600 hover:text-sky-600 transition-colors">+90 532 413 00
+                    73</a>
                 </div>
               </li>
               <li class="flex items-start">
@@ -179,7 +179,7 @@
           <!-- Contact Form -->
           <div class="lg:col-span-3 bg-white p-10 rounded-lg shadow-xl">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Mesaj Gönderin</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+            <form id="contact-form" method="POST" class="space-y-6">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Adınız Soyadınız</label>
                 <input type="text" name="name" id="name" required
@@ -188,6 +188,11 @@
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Posta Adresiniz</label>
                 <input type="email" name="email" id="email" required
+                  class="bg-white block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-shadow">
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Konu</label>
+                <input type="text" name="subject" id="subject" required
                   class="bg-white block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-shadow">
               </div>
               <div>
@@ -202,6 +207,9 @@
                 </button>
               </div>
             </form>
+            <div id="success-message" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-md">
+              Mesajınız başarıyla gönderildi!
+            </div>
           </div>
         </div>
 
@@ -211,10 +219,11 @@
             Konumumuz
           </h2>
           <div class="rounded-lg overflow-hidden shadow-xl h-96 md:h-[500px]">
+
             <iframe class="w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3015.707718991443!2d29.12883381539995!3d40.9429664793077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDU2JzM0LjciTiAyOcKwMDcnNTMuMSJF!5e0!3m2!1str!2str!4v1727464426532!5m2!1str!2str"
-              style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Nokta Bilişim Konumu"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.7345937326395!2d29.12963201277475!3d40.943483623291065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac63131fe3d93%3A0xf43c2bdf83a32d6b!2sNokta%20Bili%C5%9Fim%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20ve%20Elektronik%20Sanayi%20ve%20Ticaret%20Limited%20%C5%9Eirketi!5e0!3m2!1str!2str!4v1764013851130!5m2!1str!2str"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 
@@ -229,7 +238,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- About Section -->
         <div class="space-y-4">
-          <img src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo" class="h-12 bg-white p-1 rounded-md">
+          <img src="./images/nokta-logo/nokta-logo.png" alt="Nokta Bilişim Logo" class="h-24 bg-white p-1 rounded-md">
           <p class="text-gray-300">
             Nokta Bilişim, işletmenizin teknoloji ihtiyaçlarına yenilikçi ve güvenilir çözümler sunarak dijital dönüşüm
             yolculuğunuzda yanınızdadır.
@@ -264,7 +273,8 @@
           <h3 class="text-lg font-semibold mb-4">Hızlı Erişim</h3>
           <ul class="space-y-2">
             <li><a href="index.html" class="text-gray-300 hover:text-sky-400 transition-colors">Ana Sayfa</a></li>
-            <li><a href="hakkimizda.html" class="text-gray-300 hover:text-sky-400 transition-colors">Hakkımızda</a></li>
+            <li><a href="hakkimizda.html" class="text-gray-300 hover:text-sky-400 transition-colors">Hakkımızda</a>
+            </li>
             <li><a href="hizmetlerimiz.html"
                 class="text-gray-300 hover:text-sky-400 transition-colors">Hizmetlerimiz</a></li>
             <li><a href="iletisim.html" class="text-gray-300 hover:text-sky-400 transition-colors">İletişim</a></li>
@@ -277,11 +287,11 @@
           <ul class="space-y-3 text-gray-300">
             <li class="flex items-start">
               <i data-lucide="map-pin" class="flex-shrink-0 mr-3 mt-1 text-sky-400 w-5 h-5"></i>
-              <span>Dörtler Sokagi No:46, Girne, 34852 Maltepe/İstanbul</span>
+              <span>Girne, Girne Cd. No:133, 34852 Maltepe/İstanbul</span>
             </li>
             <li class="flex items-center">
               <i data-lucide="phone" class="flex-shrink-0 mr-3 text-sky-400 w-5 h-5"></i>
-              <a href="tel:+902161234567" class="hover:text-sky-400">+90 216 123 45 67</a>
+              <a href="tel:+905324130073" class="hover:text-sky-400">+90 532 413 00 73</a>
             </li>
             <li class="flex items-center">
               <i data-lucide="mail" class="flex-shrink-0 mr-3 text-sky-400 w-5 h-5"></i>
@@ -293,7 +303,8 @@
     </div>
     <div class="bg-gray-900 py-4">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
-        &copy; <span id="current-year"></span> Nokta Bilişim Teknolojileri. Tüm Hakları Saklıdır.
+        &copy; <span id="current-year"></span> Nokta Bilişim Danışmanlık ve Elektronik San. Tic. Ltd. Şti. Tüm Hakları
+        Saklıdır.
       </div>
     </div>
   </footer>
