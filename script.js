@@ -102,12 +102,20 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-acronis.png",
     },
     {
+      name: "SoftExpert",
+      logoUrl: "./images/business-partners/noktabilisim-softexpert.png",
+    },
+    {
       name: "Hikvision",
       logoUrl: "./images/business-partners/noktabilisim-hikvision.png",
     },
     {
       name: "Honeywell",
       logoUrl: "./images/business-partners/noktabilisim-honeywell.png",
+    },
+    {
+      name: "AMD",
+      logoUrl: "./images/business-partners/noktabilisim-amd.png",
     },
     {
       name: "Fortinet",
@@ -118,8 +126,16 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-aruba.png",
     },
     {
+      name: "Trellix",
+      logoUrl: "./images/business-partners/noktabilisim-trellix.png",
+    },
+    {
       name: "Aten",
       logoUrl: "./images/business-partners/noktabilisim-aten.png",
+    },
+    {
+      name: "Veeam",
+      logoUrl: "./images/business-partners/noktabilisim-veeam.png",
     },
     {
       name: "Cisco",
@@ -130,6 +146,26 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-dell.png",
     },
     {
+      name: "Intel",
+      logoUrl: "./images/business-partners/noktabilisim-intel.png",
+    },
+    {
+      name: "LG",
+      logoUrl: "./images/business-partners/noktabilisim-lg.png",
+    },
+    {
+      name: "NVIDIA",
+      logoUrl: "./images/business-partners/noktabilisim-nvidia.png",
+    },
+    {
+      name: "Emerson",
+      logoUrl: "./images/business-partners/noktabilisim-emerson.png",
+    },
+    {
+      name: "Hewlett",
+      logoUrl: "./images/business-partners/noktabilisim-hewlett.png",
+    },
+    {
       name: "Dlink",
       logoUrl: "./images/business-partners/noktabilisim-dlink.png",
     },
@@ -138,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-eset.png",
     },
     { name: "F5", logoUrl: "./images/business-partners/noktabilisim-f5.png" },
-    { name: "HP", logoUrl: "./images/business-partners/noktabilisim-hp.png" },
+
     {
       name: "Juniper",
       logoUrl: "./images/business-partners/noktabilisim-juniper.png",
