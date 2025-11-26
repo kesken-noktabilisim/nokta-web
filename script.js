@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img.src = brand.logoUrl;
       img.alt = brand.name;
       img.className =
-        "h-[120px] max-w-full object-contain filter transition-all duration-300 ease-in-out";
+        "h-[140px] max-w-full object-contain filter transition-all duration-300 ease-in-out";
       div.appendChild(img);
       carousel.appendChild(div);
     });
