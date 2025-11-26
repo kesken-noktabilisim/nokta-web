@@ -110,6 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-hikvision.png",
     },
     {
+      name: "Adobe",
+      logoUrl: "./images/business-partners/noktabilisim-adobe.png",
+    },
+    {
       name: "Honeywell",
       logoUrl: "./images/business-partners/noktabilisim-honeywell.png",
     },
@@ -146,8 +150,20 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-dell.png",
     },
     {
+      name: "Dell Tech",
+      logoUrl: "./images/business-partners/noktabilisim-delltech.png",
+    },
+    {
       name: "Intel",
       logoUrl: "./images/business-partners/noktabilisim-intel.png",
+    },
+    {
+      name: "HP",
+      logoUrl: "./images/business-partners/noktabilisim-hp.png",
+    },
+    {
+      name: "Millestone",
+      logoUrl: "./images/business-partners/noktabilisim-milestone.png",
     },
     {
       name: "LG",
@@ -166,15 +182,10 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-hewlett.png",
     },
     {
-      name: "Dlink",
-      logoUrl: "./images/business-partners/noktabilisim-dlink.png",
-    },
-    {
       name: "Eset",
       logoUrl: "./images/business-partners/noktabilisim-eset.png",
     },
     { name: "F5", logoUrl: "./images/business-partners/noktabilisim-f5.png" },
-
     {
       name: "Juniper",
       logoUrl: "./images/business-partners/noktabilisim-juniper.png",
@@ -207,11 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Monster",
       logoUrl: "./images/business-partners/noktabilisim-monster.png",
     },
-    { name: "MSI", logoUrl: "./images/business-partners/noktabilisim-msi.png" },
-    {
-      name: "NComputing",
-      logoUrl: "./images/business-partners/noktabilisim-ncomputing.png",
-    },
     {
       name: "Oracle",
       logoUrl: "./images/business-partners/noktabilisim-oracle.png",
@@ -231,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Sun", logoUrl: "./images/business-partners/noktabilisim-sun.png" },
     {
       name: "Techno PC",
-      logoUrl: "./images/business-partners/noktabilisim-technopc.png",
+      logoUrl: "./images/business-partners/noktabilisim-technopc.jpg",
     },
     {
       name: "VMware",
@@ -250,6 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
       logoUrl: "./images/business-partners/noktabilisim-zyxel.png",
     },
   ];
+
   const carousel = document.querySelector(".animate-infinite-scroll");
   if (carousel) {
     const allBrands = [...brands, ...brands]; // Duplicate for seamless loop
