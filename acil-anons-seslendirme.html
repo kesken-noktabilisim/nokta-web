@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunucu Hizmetleri | Nokta Bilişim</title>
+  <title>Hizmetlerimiz | Nokta Bilişim</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
             class="text-gray-600 hover:text-sky-500 transition-colors duration-300 text-lg">Hakkımızda</a>
           <div class="relative group">
             <a href="hizmetlerimiz.html"
-              class="flex items-center text-sky-500 font-semibold hover:text-sky-500 transition-colors duration-300 text-lg">
+              class="flex items-center text-sky-500 font-semibold  hover:text-sky-500 transition-colors duration-300 text-lg">
               Hizmetlerimiz
               <i data-lucide="chevron-down"
                 class="ml-1 h-4 w-4 transition-transform duration-300 group-hover:rotate-180"></i>
@@ -39,7 +39,7 @@
               class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
               <div class="py-2">
                 <a href="sunucu-hizmetleri.html"
-                  class="block px-4 py-2 text-md text-sky-500 bg-sky-50 hover:text-sky-600">Sunucu Hizmetleri</a>
+                  class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Sunucu Hizmetleri</a>
                 <a href="sanallastirma.html"
                   class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Sanallaştırma</a>
                 <a href="guvenlik-hizmetleri.html"
@@ -71,10 +71,9 @@
                   İhbar Sistemleri
                 </a>
                 <a href="acil-anons-seslendirme.html"
-                  class="block px-4 py-2 text-md text-gray-700 hover:bg-sky-50 hover:text-sky-600">Acil Anons,
+                  class="block px-4 py-2 text-md text-gray-700 bg-sky-50 text-sky-600">Acil Anons,
                   Seslendirme ve Endüstriyel Sistemleri
                 </a>
-
               </div>
             </div>
           </div>
@@ -163,33 +162,41 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Service Header -->
-    <section class="relative py-32 bg-gray-800 text-white overflow-hidden">
-      <div class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 object-center hero-service-sunucu"></div>
-      <div class="absolute inset-0 bg-gray-900 opacity-60 z-10"></div>
+    <!-- Page Header -->
+    <section class="relative bg-sky-600 text-white py-32 overflow-hidden">
+      <img src="./images/hero/acil-anons.jpg" alt="Arka plan resmi"
+        class="absolute inset-0 w-full h-full object-cover z-0" />
+      <div class="absolute inset-0 bg-sky-800 opacity-70 z-10"></div>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
-        <h1 class="text-4xl md:text-5xl font-bold">Sunucu Hizmetleri</h1>
-        <p class="mt-4 text-lg max-w-2xl mx-auto">İşletmenizin verilerini güvenle barındıran, yüksek performanslı ve
-          kesintisiz sunucu çözümleri sunuyoruz.</p>
+        <h1 class="text-4xl md:text-5xl font-bold">Acil Anons, Seslendirme ve Endüstriyel Sistemleri</h1>
+        <p class="mt-4 text-lg text-sky-100 max-w-3xl mx-auto">
+          İşletmelerde güvenli iletişim ve etkili bilgilendirme için profesyonel acil anons ve seslendirme sistemleri
+          kuruyoruz.
+        </p>
       </div>
     </section>
 
-    <!-- Service Content -->
+    <!-- Services Content -->
     <section class="py-24 bg-white">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
           <div class="prose lg:prose-xl max-w-none text-gray-700">
-            <p class="lead">Verilerinizin güvenliği ve uygulamalarınızın performansı için kritik olan sunucu altyapınızı
-              en son teknolojilerle kuruyor ve yönetiyoruz. Fiziksel, bulut veya hibrit sunucu çözümlerimizle iş
-              sürekliliğinizi güvence altına alıyoruz.</p>
+            <p class="lead">Acil durum yönetimi, bilgilendirme ve yönlendirme süreçlerinde kritik rol oynayan
+              seslendirme ve acil anons sistemlerinizi uluslararası standartlara uygun şekilde tasarlıyor ve kuruyoruz.
+              Büyük tesislerden ofis binalarına, endüstriyel üretim hatlarından kamu alanlarına kadar her ihtiyaca uygun
+              ölçeklenebilir çözümler sunuyoruz.
+              Güvenilir, anlaşılır ve merkezi yönetilebilir sistemlerle iletişim altyapınızı güvence altına alıyoruz.
+            </p>
 
             <h3 class="font-bold text-2xl mt-12 mb-4">Bu Hizmet Neler Sunuyor?</h3>
             <ul class="list-disc pl-5 space-y-2">
-              <li>Fiziksel, bulut ve hibrit sunucu kurulumu ve yapılandırması.</li>
-              <li>7/24 kesintisiz çalışma (uptime) ve performans izleme.</li>
-              <li>Veri yedekleme, felaket kurtarma ve iş sürekliliği planlaması.</li>
-              <li>Güvenlik optimizasyonu ve yetkilendirme yönetimi.</li>
-              <li>İhtiyaçlarınıza özel ölçeklenebilir sunucu kaynakları.</li>
+              <li>Acil anons (PA) sistemlerinin kurulumu, entegrasyonu ve yapılandırılması.</li>
+              <li>Merkezi seslendirme, duyuru ve müzik yayını sistemleri.</li>
+              <li>Endüstriyel ortamlara uygun, dayanıklı ve yüksek ses gücüne sahip hoparlör çözümleri.</li>
+              <li>Yangın alarmı ve acil durum senaryolarıyla entegre anons sistemleri.</li>
+              <li>Bölgesel ses kontrolü, zonlama ve çoklu alan yönetimi.</li>
+              <li>Kablosuz, IP tabanlı ve network entegrasyonlu ses sistemleri.</li>
+              <li>Mevcut ses sistemlerinin revizyonu, test edilmesi ve iyileştirilmesi.</li>
             </ul>
 
             <div class="mt-12 p-8 bg-sky-50 border-l-4 border-sky-500 rounded-r-lg">
@@ -215,6 +222,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
